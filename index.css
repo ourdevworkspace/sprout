@@ -19,6 +19,7 @@ body,
 div,
 section,
 figure,
+h2,
 p,
 a,
 img,
@@ -68,6 +69,8 @@ button {
   user-select: none;
   cursor: pointer;
   color: var(--acadia);
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 /* LAYOUT */
@@ -222,10 +225,17 @@ button {
 /* BANNERS */
 .banners {
   margin-top: 2rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+@media (max-width: 55rem) {
+  .banners {
+    margin-bottom: 4rem;
+  }
 }
 
 /* BANNERS: CONTAINER */
@@ -297,4 +307,31 @@ button {
 
 .banners__controls--left {
   background-color: var(--acadia);
+}
+
+/* DISCOUNTS */
+.discounts {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.discounts__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discounts__title {
+  display: flex;
+  gap: 1rem;
+}
+
+.discounts__title span {
+  cursor: auto;
+}
+
+.discounts__all {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
