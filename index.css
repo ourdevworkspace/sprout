@@ -330,8 +330,6 @@ button {
   cursor: auto;
 }
 
-.discounts__all {
-  display: flex;
-  align-items: center;
+.discounts__header p {
   cursor: pointer;
 }
